@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CSharpEntityFrameworkPlayers
 {
     [Table("Player")]
-    public class PlayerErro
+    public class Player
     {
         //ATTRIBUTI
 
