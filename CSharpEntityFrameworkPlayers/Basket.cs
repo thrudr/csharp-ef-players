@@ -9,7 +9,7 @@ namespace CSharpEntityFrameworkPlayers
 {
     public class Basket : DbContext
     {
-        public DbSet<Player> Players { get; set; }
+        public DbSet<PlayerErro> Players { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Data Source=localhost;Database=FrameworkBasketPlayers;Integrated Security=True;TrustServerCertificate=True");
