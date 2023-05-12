@@ -10,6 +10,7 @@ namespace CSharpEntityFrameworkPlayers
     [Table("Player")]
     public class Player
     {
+
         //ATTRIBUTI
 
         public int id { get; set; }
@@ -17,7 +18,21 @@ namespace CSharpEntityFrameworkPlayers
         public string cognome { get; set; }
         public int punteggio { get; set; }
         public int numeroPartiteGiocate { get; set; }
-        public int numeroPartiteVinte { get; set; }
+        public double numeroPartiteVinte { get; set; }
+
+        //COSTRUTTORE
+
+        public Player(string? nome, string? cognome, int punteggio, int numeroPartiteGiocate, double numeroPartiteVinte)
+        {
+            this.nome = nome;
+            this.cognome = cognome;
+            this.punteggio = punteggio;
+            this.numeroPartiteGiocate = numeroPartiteGiocate;
+            this.numeroPartiteVinte = numeroPartiteVinte;
+        }
+
+        //METODI
+
 
     }
 }
